@@ -1,9 +1,3 @@
-#**NOTE: Because of the looping system used,
-#        if player wants to play again or quit
-#        he/she must do so at the start screen
-#        that automatically appears at the
-#        beginning/end of the game
-
 #set up
 #_________________________________________________________________________
 
@@ -62,7 +56,7 @@ def main():
 #load images
 #_________________________________________________________________________
     
-    win = pygame.image.load("Win Screen.png") #**don't randomly .convert()
+    win = pygame.image.load("Win Screen.png") #**no unecessarily .convert()
     lose = pygame.image.load("Lose Screen.png")
     
     respawn = pygame.image.load("Respawn Screen.png")
@@ -319,7 +313,7 @@ def main():
                     if event.key == pygame.K_SPACE:
                          main() #play from main screen 
 
-        #pygame.display.update() #need again (separate loop)
+        #pygame.display.update() need again (separate loop)
 
 #start screen
 #_________________________________________________________________________
