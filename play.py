@@ -8,6 +8,14 @@ import time
 from pygame.locals import*
 pygame.init()
 
+#music
+#_________________________________________________________________________
+
+pygame.mixer.init()
+pygame.mixer.music.load("wallpaper.mp3") # set up here allows music to play during start screen as well as main game
+pygame.mixer.music.set_volume(0.5)
+pygame.mixer.music.play(-1) # (-1) means loops indefinitely
+
 #main game function
 #_________________________________________________________________________
 def main():
@@ -112,7 +120,7 @@ def main():
 
         if timer != 0: #countdown timer
             timer -= 1
-            time_display = timer/60
+            time_display = int(timer/60)
         timing = myfont.render(str(time_display),1,black)
 
         if timer <= 0:
