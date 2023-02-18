@@ -12,3 +12,5 @@ You need to collect 10 stars within 60 seconds to win.
 Be care of the enemies! They decrease your timer by 5 seconds each time you make contact.
 
 Good luck on your space adventure!
+
+![Game demo gif](https://github.com/aliciajpan/aliciajpan.github.io/blob/47549741e373dab182a03373ffd0fc3a8c4d08a4/assets/gifs/planet.gif)
